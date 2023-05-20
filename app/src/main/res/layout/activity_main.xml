@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#0E0B0B"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F81818"
+        android:gravity="center_horizontal"
+        android:text="Bienvenidos Al Sabor" />
+
+    <ImageView
+        android:id="@+id/logopepsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="#0E0A0A"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtingresesuemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#DAD0D0"
+        android:paddingRight="10dp"
+        android:text=" "
+        android:textColor="#100C0C"
+        tools:text=" Ingrese su e-mail" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:height="48dp"
+        android:background="#676262"
+        android:backgroundTint="#D1C3C3"
+        android:ems="10"
+        android:foregroundTint="#EADCDC"
+        android:hint="e-mail@mail.com"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/txtcajapass"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:background="#EFE9E9"
+        android:backgroundTint="#D1BEBE"
+        android:ems="10"
+        android:foregroundTint="#BFA6EC"
+        android:hint="Pass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btningresar"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginTop="10dp"
+        android:text="INGRESAR"
+        app:cornerRadius="@android:dimen/app_icon_size" />
+
+</LinearLayout>
